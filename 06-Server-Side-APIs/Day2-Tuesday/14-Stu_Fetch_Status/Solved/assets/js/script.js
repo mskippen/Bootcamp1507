@@ -1,22 +1,13 @@
-var badRequestUrl = 'https://api.github.com/orgs/nodejs/oreps';
-
+var requestUrl = 'https://developer.adzuna.com';
 var responseText = document.getElementById('response-text');
 
-function getApi(requestUrl) {
-  fetch(requestUrl)
-    .then(function (response) {
-      console.log(response.status);
-      //  Conditional for the the response.status.
-      if (response.status !== 200) {
-        // Place the response.status on the page.
-        responseText.textContent = response.status;
-      }
-      return response.json();
-    })
-    .then(function (data) {
-      // Make sure to look at the response in the console and read how 404 response is structured.
-      console.log(data);
-    });
-}
 
-getApi(badRequestUrl);
+
+fetch('https://api.adzuna.com/v1/api/jobs/gb/search/1?app_id=550b2d94&app_key=39c92e6c7e94f4d85b30478f87a1cbb9')
+  .then(function (response) {
+    console.log(response);
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data)
+  });
