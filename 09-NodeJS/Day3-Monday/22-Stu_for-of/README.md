@@ -6,9 +6,9 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when I have selected all the inside `#songs` elements in the `html`.
+* It's done when I have selected all the element inside `#songs` in the `html`.
 
-* It's done when I have iterated through the song collection with a `for...of` loop and added a `class` of `red` to each element.
+* It's done when I have iterated through the song collection with a `for...of` loop and added a `class` of `green` to each element.
 
 ## 💡 Hints
 

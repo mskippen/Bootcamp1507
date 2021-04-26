@@ -1,20 +1,29 @@
 // 1. Using arrays
-const songs = ['Bad Guy', 'Old Town Road', '7 Rings'];
+const songs = ['Bad Guy', 'The Wheels on the Bus', 'Friday'];
 
-for (const value of songs) {
-  console.log(value);
+for (const value of songs) console.log(value);
+
+/* Output:
+  Bad Guy
+  The Wheels on the Bus
+  Friday
+*/
+
+console.log('\n================================================\n');
+
+// 2. Using multidimensional arrays
+const moreSongs = [
+  ['Bad Guy', 1],
+  ['The Wheels on the Bus', 2],
+  ['Friday', 3],
+];
+
+for (const song of moreSongs) {
+  console.log(`${song[0]}'s chart position is ${song[1]}`);
 }
-// Bad Guy
-// Old Town Road
-// 7 Rings
 
-
-// 2. Using map
-const songs = new Map([['Bad Guy', 1], ['Old Town Road', 2]]);
-
-for (const [key, value] of songs) {
-  console.log(`${key}'s chart position is ${value}`);
-}
-// Output:
-// Bad Guy's chart position is 1
-// Old Town Road's chart position is 2
+/* Output:
+  Bad Guy's chart position is 1
+  The Wheels on the Bus's chart position is 2
+  Friday's chart position is 3
+*/
