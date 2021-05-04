@@ -43,7 +43,7 @@ const items = [
 ];
 
 const orders = items.map(item => new Order(item));
-
+console.log("sadfasdf",orders)
 orders.forEach(order => restaurant.takeOrder(order));
 
 restaurant.prepareOrders();
