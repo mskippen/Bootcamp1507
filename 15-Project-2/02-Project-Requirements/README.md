@@ -22,7 +22,7 @@ You and your group will use everything you’ve learned over the past six weeks 
 
 * Protect API keys and sensitive information with environment variables.
 
-* May Use Handlebars.js as the template engine.
+* May use Handlebars.js as the template engine.
 
 * Be deployed using Heroku (with data).
 
