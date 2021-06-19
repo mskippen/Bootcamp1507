@@ -9,22 +9,22 @@ test('counter is returning as an object', () => {
   expect(typeof studentCounter).toEqual('object');
 });
 
-test('count should equal 0', () => {
-  let studentCounter = counter();
-  expect(studentCounter.increment()).toEqual(0);
-});
-
 test('count should equal 1', () => {
   let studentCounter = counter();
-  studentCounter.increment();
   expect(studentCounter.increment()).toEqual(1);
 });
 
-test('count should equal 4', () => {
+test('count should equal 2', () => {
+  let studentCounter = counter();
+  studentCounter.increment();
+  expect(studentCounter.increment()).toEqual(2);
+});
+
+test('count should equal 5', () => {
   let studentCounter = counter();
   studentCounter.increment();
   studentCounter.increment();
   studentCounter.increment();
   studentCounter.increment();
-  expect(studentCounter.increment()).toEqual(4);
+  expect(studentCounter.increment()).toEqual(5);
 });
