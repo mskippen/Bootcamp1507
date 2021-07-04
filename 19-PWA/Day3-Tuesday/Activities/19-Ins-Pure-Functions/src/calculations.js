@@ -1,4 +1,4 @@
-export function subtract(a, b) {
+export const subtract = (a, b) => {
   const result = a - b;
   return result;
 }
