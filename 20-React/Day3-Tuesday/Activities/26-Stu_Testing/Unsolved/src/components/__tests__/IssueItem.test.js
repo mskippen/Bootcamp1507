@@ -39,8 +39,8 @@ describe("Renders each issue individually", () => {
   it("matches snapshot", () => {
     act(() => {
       // TODO: Add code to check whether or not the rendered component matches the snapshot
-      const fragment = render();
-      expect(fragment).toMatchSnapshot();
+      render();
     });
+    expect(container.innerHTML).toMatchSnapshot();
   });
 });

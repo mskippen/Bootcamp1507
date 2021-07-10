@@ -22,12 +22,14 @@ describe('Renders a list of issues', () => {
   it('renders', () => {
     act(() => {
       render(<SearchBar />, container);
-      return undefined;
     });
+    expect(container.textContent).toContain('Retrieve GitHub Issues');
   });
 
   it('matches snapshot', () => {
-    const fragment = render(<SearchBar />, container);
-    expect(fragment).toMatchSnapshot();
+    act(() => {
+      render(<SearchBar />, container);
+    });
+    expect(container.innerHTML).toMatchSnapshot();
   });
 });

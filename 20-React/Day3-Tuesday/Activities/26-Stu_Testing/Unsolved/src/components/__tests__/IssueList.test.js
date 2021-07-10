@@ -43,16 +43,14 @@ describe('Renders a list of issues', () => {
       // TODO: Add code to check whether or not the component renders properly
       render();
     });
-    expect(container.textContent).toContain(
-      'Git: Support git history in VSCode'
-    );
+    expect(container.textContent).toContain('Git: Support git history in VSCode');
   });
 
   it('matches snapshot', () => {
     act(() => {
       // TODO: Add code to check whether or not the rendered component matches the snapshot
-      const fragment = render();
-      expect(fragment).toMatchSnapshot();
+      render();
     });
+    expect(container.innerHTML).toMatchSnapshot();
   });
 });
